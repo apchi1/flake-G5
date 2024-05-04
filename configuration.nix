@@ -1,5 +1,5 @@
 { config, pkgs, lib, callPackage, ... }: {
-#  security.polkit.enable = true;
+#security.polkit.enable = true;
 imports = [ 
 # Include the results of the hardware scan.
 	./hardware-configuration.nix		
