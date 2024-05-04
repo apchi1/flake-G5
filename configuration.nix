@@ -5,6 +5,8 @@ imports = [
 	./hardware-configuration.nix		
 ];
 
+#test
+
 boot = {
 	kernelModules = ["nvidia"];
 	extraModulePackages = [];
