@@ -12,7 +12,7 @@ boot = {
 	loader = {
 		systemd-boot.enable = true;
 		efi.canTouchEfiVariables = true;
-		systemd-boot.consoleMode = "max";
+#		systemd-boot.consoleMode = "max";
 		systemd-boot.configurationLimit = 10;
 	};
 };
