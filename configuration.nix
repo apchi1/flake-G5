@@ -115,8 +115,10 @@ services.picom = {
   fadeSteps = [0.02 0.5];
   backend = "glx";
 };
+
+# Allias
 environment.shellAliases = {
-	rebuild = "nixos-rebuild switch --upgrade-all";
+	rebuild = "sudo nixos-rebuild switch --upgrade-all && cd ~/flake-G5 && ./auto-copy.sh && cd -";
 };
 
 # Services
@@ -156,7 +158,6 @@ environment.systemPackages = with pkgs;[
 	
 	gradle openjdk #libcanberra 
 
-	python
 	nodejs yarn
 	cargo gcc cmake gnumake
 
