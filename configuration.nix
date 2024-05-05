@@ -158,6 +158,7 @@ environment.systemPackages = with pkgs;[
 	
 	gradle openjdk #libcanberra 
 
+	python3
 	nodejs yarn
 	cargo gcc cmake gnumake
 
